@@ -1,0 +1,183 @@
+/* ===== Global Page Style ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #e9d5ff);
+  margin: 0;
+  padding: 60px 0;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ===== App Wrapper ===== */
+.App-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+/* ===== Form Section ===== */
+.form-section {
+  width: 95%;
+  max-width: 950px; /* ⬅ increased width */
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  padding: 50px 60px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.form-section:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== Heading ===== */
+.form-section h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* ===== Input Fields ===== */
+.form-section input[type="text"],
+.form-section textarea {
+  width: 100%;
+  padding: 16px 18px;
+  margin: 14px 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff5f5;
+  font-size: 1.05rem;
+  color: #334155;
+  transition: all 0.3s ease;
+}
+
+.form-section input[type="text"]:focus,
+.form-section textarea:focus {
+  outline: none;
+  border-color: #a855f7;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
+}
+
+/* ===== Button ===== */
+.form-section button[type="submit"] {
+  width: 100%;
+  padding: 16px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #6d28d9, #9333ea);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.form-section button[type="submit"]:hover {
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  transform: translateY(-2px);
+}
+
+/* ===== Logout Button ===== */
+button.logout-btn {
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  padding: 10px 16px;
+  background: #ef4444;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* ===== Posts Section ===== */
+.posts-section {
+  width: 95%;
+  max-width: 950px; /* ⬅ match with form width */
+}
+
+.posts-section h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* ===== Post Cards ===== */
+.post-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  padding: 25px;
+  margin-bottom: 22px;
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+}
+
+.post-card h3 {
+  margin: 0;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.post-card .post-author {
+  font-style: italic;
+  color: #64748b;
+  margin: 8px 0;
+}
+
+.post-card p {
+  color: #334155;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.post-actions button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.post-actions button:first-child {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.post-actions button:last-child {
+  background: #ef4444;
+  color: #fff;
+}
+
+.post-actions button:hover {
+  opacity: 0.9;
+}
+
+
+
+
