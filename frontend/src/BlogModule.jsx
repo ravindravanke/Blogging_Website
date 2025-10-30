@@ -136,8 +136,8 @@ function BlogModule() {
             <p>{post.content}</p>
             </div>
 
-            {post.imageUrl && (
-              <img src={`${process.env.REACT_APP_BACKEND_URI}${post.imageUrl}`} alt="Post" className="post-image" width={'40px'} height={'40px'}/>
+            {post?.imageUrl && (
+              <img src={`${post.imageUrl}`} alt={post.title} className="post-image" width={'40px'} height={'40px'}/>
             )}
             </div>
 

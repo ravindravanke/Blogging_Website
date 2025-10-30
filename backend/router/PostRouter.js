@@ -10,10 +10,11 @@ const path = require('path');
 router.post('/', upload.single('image'), async (req, res) => {
   try {
     const { title, author, content } = req.body;
-    let imageUrl = '';
-    if (req.file) {
-      imageUrl = `/uploads/${req.file.filename}`;
-    }
+    // let imageUrl = '';
+    // if (req.file) {
+    //   imageUrl = `/uploads/${req.file.filename}`;
+    // }
+    const imageUrl = req.file ? req.file.path : '';
     const post = await Post.create({ title, author, content, imageUrl });
     res.status(201).json(post);
   } catch (error) {
