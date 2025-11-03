@@ -50,7 +50,7 @@ function BlogModule() {
     const method = editingPostId ? 'PUT' : 'POST';
     try {
       const response = await fetch(url, {
-        method,
+        method:method,
         body: formData,
       });
 
