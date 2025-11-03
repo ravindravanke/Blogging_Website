@@ -18,6 +18,7 @@ router.post('/', upload.single('image'), async (req, res) => {
     const post = await Post.create({ title, author, content, imageUrl });
     res.status(201).json(post);
   } catch (error) {
+    console.log(error)
     res.status(500).json({ error: 'Failed to create post' });
   }
 });
